@@ -1,0 +1,38 @@
+.mega-container{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.719);
+    position: fixed;
+    z-index: 300000;
+}
+
+.container{
+    width: 65vw;
+    background-color: salmon;
+    padding: 20px 3vw 20px 3vw;
+    border-radius: 20px;
+    font-size: clamp(15px,2.45vw,20px);
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 300001;
+}
+
+.container img{
+    height: clamp(200px,17vw,250px);
+    width: clamp(200px,17vw,250x);
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#quit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+    height: auto;
+}

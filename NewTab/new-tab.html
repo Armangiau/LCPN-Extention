@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Un nouvel onglet personalisépour le lycée Auguste Pavie"
+    />
+    <meta http-equiv="Cache-control" content="max-age=86400" />
+    <link
+      rel="preload"
+      as="font"
+      href="../Ressources/Fonts/9f8f809546255806ae4242e067b4fcf1.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://raw.githubusercontent.com/Armangiau/LCPN-extention/main/Ressources/messages.json"
+      as="fetch"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="new-tab.css" />
+    <link rel="icon" href="../icones/icon16.ico" />
+    <script src="axios.min.js"></script>
+    <script src="new-tab.js" defer></script>
+    <title>Nouvel Onglet</title>
+  </head>
+  <body>
+    <div class="logo-container">
+      <img src="../icones/icon400.webp" alt="Logo LCPN" id="logo" />
+      <h1>Nouvel Onglet</h1>
+    </div>
+    <form action="https://www.ecosia.org/search" method="get">
+      <div class="input-container">
+        <input
+          type="text"
+          name="q"
+          id="q"
+          spellcheck="false"
+          autofocus
+          title="Rechercher"
+          aria-label="Entrez votre recherche ici"
+          placeholder="Entrez votre recherche"
+        />
+        <button type="submit" id="submit" title="Envoyer">&#x1F50E;</button>
+      </div>
+    </form>
+
+    <div class="message-container"></div>
+
+    <div class="sites">
+      <a href="http://www.toutatice.fr/portail/auth/MonEspace">
+        <div class="lien">
+          <h3>Toutatice</h3>
+          <img
+            src="../Ressources/logo-toutatice-normal.png"
+            alt="Logo de toutatice"
+          />
+        </div>
+      </a>
+      <a href="https://fr.wikiquote.org/wiki/Wikiquote:Accueil">
+        <div class="lien">
+          <h3>Citations Wiki</h3>
+          <img src="../Ressources/wikiquote.png" alt="Logo de Wikiquote" />
+        </div>
+      </a>
+      <a href="#">
+        <h3></h3>
+        <!-- <img src="../Ressources/" alt=""> -->
+        <div class="lien"></div>
+      </a>
+      <a href="#">
+        <h3></h3>
+        <!-- <img src="../Ressources/" alt=""> -->
+        <div class="lien"></div>
+      </a>
+      <a href="#">
+        <h3></h3>
+        <!-- <img src="../Ressources/" alt=""> -->
+        <div class="lien"></div>
+      </a>
+    </div>
+  </body>
+</html>

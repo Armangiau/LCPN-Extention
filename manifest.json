@@ -1,0 +1,42 @@
+{
+    "name": "LCPN",
+    "description": "Une exetention pour le lycée pavie permettent de réduir notre consomation",
+    "manifest_version": 3,
+    "version": "1.0",
+    "icons": {
+      "16": "icones/icon16.png",
+      "48": "icones/icon48.png",
+      "128": "icones/icon128.png"
+      },
+    "content_scripts": [
+        {
+          "matches": [
+            "http://www.youtube.com/*",
+            "https://www.youtube.com/*",
+            "http://m.youtube.com/*"
+          ],
+          "js": [
+            "Content-scripts/content-script.js"
+          ],
+          "css": [
+            "Content-scripts/content-script.css"
+          ]
+        }
+    ],
+    "chrome_url_overrides" : {
+        "newtab": "NewTab/new-tab-for-api.html"
+    },
+    "chrome_settings_overrides": {
+        "homepage":"NewTab/new-tab.html",
+        "search_provider": {
+            "name": "Ecosia",
+            "keyword": "eco",
+            "search_url": "https://www.ecosia.org/search?q={searchTerms}",
+            "favicon_url": "https://cdn-static.ecosia.org/assets/images/ico/favicon.ico",
+            "suggest_url": "https://www.ecosia.org/autocomplete?q={searchTerms}&mkt=fr-fr",
+            "image_url": "https://www.ecosia.org/images?q={searchTerms}",
+            "encoding": "UTF-8",
+            "is_default": true
+        }
+    }
+}
