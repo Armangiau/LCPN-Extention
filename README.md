@@ -4,9 +4,8 @@ Ce projet est abandonné vous pouvez néanmoins le consulter
 
 ## Installer l'extention en mode développment
 
-1. ```bash
-git clone LCPN-Extention
-```
+1. ```git clone LCPN-Extention```
+
 ### Sur Edge \(Chromium\)
 
 2. Vérifier que la version du `manifest.json` est bien fixé à `3`
